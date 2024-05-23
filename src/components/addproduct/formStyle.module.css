@@ -1,0 +1,54 @@
+.imageContainer{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+.noImage{
+    width: 100%;
+    height: 40vh;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.firstDiv{
+    width: 40%;
+}
+.firstImage{
+    width: 100%;
+}
+.noImage:hover{
+    filter: grayscale(100%);
+    -webkit-filter: opacity(.5);
+}
+.image{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 931px) {
+    .firstImage{
+        display: none;
+    }
+    .image{
+        display: none;
+    }
+    .mobileDisplay{
+        display: block
+    }
+}
+@media screen and (min-width: 931px) {
+  
+
+    .mobileDisplay{
+        display: none;
+    }
+}
+
+.mobileImage{
+    width: 100%;
+}
+.name{
+    width: 100%;
+}
